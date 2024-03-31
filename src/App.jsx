@@ -2,6 +2,7 @@
 import React from 'react';
 import PokemonCard from './components/PokemonCard';
 
+import PropTypes from "prop-types";
 const pokemonList = [
   {
     name: "bulbasaur",
@@ -13,10 +14,15 @@ const pokemonList = [
   },
 ];
 
+PokemonCard.prototype = {
+  name: PropTypes.string.isRequired,
+  imgSRC: PropTypes.string
+}
+
 const App = () => {
   return (
     <div>
-      <PokemonCard nesrine={pokemonList} />
+      <PokemonCard name={pokemonList[0].name} imgSRC={pokemonList[0].imgSrc} />
     </div>
   );
 };
