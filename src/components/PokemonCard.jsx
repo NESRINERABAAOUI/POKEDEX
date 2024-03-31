@@ -1,13 +1,15 @@
 import React from 'react'
 
-const PokemonCard = ({name, imgSRC}) => {
+const PokemonCard = ({name, imgSrc}) => {
 
   return (
     <figure>
-      {imgSRC ? <img src={imgSRC} /> : <p>???</p>}
+      {imgSrc ? <img src={imgSrc} /> : <p>???</p>}
       
       <figcaption>{name}</figcaption>
-    </figure>)
+    </figure>
+    
+    )
   
 }
 
