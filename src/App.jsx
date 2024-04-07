@@ -39,7 +39,7 @@ const App = () => {
   const [pokemonIndex, setPokemonIndex] = useState(0);
   return (
     <div>
-      <NavBar pokemonIndex={pokemonIndex} setPokemonIndex={setPokemonIndex} />
+      <NavBar pokemonList={pokemonList} setPokemonIndex={setPokemonIndex} />
       <PokemonCard name={pokemonList[pokemonIndex].name} imgSrc={pokemonList[pokemonIndex].imgSrc} />
      </div>
   );
