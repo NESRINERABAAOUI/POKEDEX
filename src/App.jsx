@@ -2,7 +2,7 @@
 import React from 'react';
 import PokemonCard from './components/PokemonCard';
 
-import PropTypes from "prop-types";
+import PropTypes from "proptypes";
 const pokemonList = [
   {
     name: "bulbasaur",
@@ -14,7 +14,7 @@ const pokemonList = [
   },
 ];
 
-PokemonCard.prototype = {
+PokemonCard.propTypes = {
   name: PropTypes.string.isRequired,
   imgSRC: PropTypes.string
 }
