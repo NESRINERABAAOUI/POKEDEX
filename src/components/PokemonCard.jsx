@@ -1,9 +1,9 @@
 import React from 'react'
 
 const PokemonCard = ({pokemonCard}) => {
-console.log(nesrine)
+console.log(pokemonCard)
   return (
-    nesrine.map((pokemon)=>(
+    pokemonCard.map((pokemon)=>(
     <figure>
       {pokemon.imgSrc ? <img src={pokemon.imgSrc} /> : <p>???</p>}
       
