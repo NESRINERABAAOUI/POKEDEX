@@ -1,6 +1,6 @@
 import React from 'react'
 
-const PokemonCard = ({nesrine}) => {
+const PokemonCard = ({pokemonCard}) => {
 console.log(nesrine)
   return (
     nesrine.map((pokemon)=>(
